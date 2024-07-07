@@ -1,0 +1,441 @@
+/* Common CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1205px;
+    margin: auto;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+
+.align-center {
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav { 
+    background-color: #3D5A80;
+    border-bottom: 2px solid #000000;
+}
+
+/* Common CSS */
+
+
+
+/* Nav start */
+nav .logo {
+    width: 30%;
+}
+
+nav .menu {
+    width: 70%;
+    text-align: right;
+}
+
+nav ul li {
+    margin-top: 47px;
+    margin-bottom: 29px;
+    display: inline-block;
+    
+}
+
+nav ul li a {
+    color: white;
+    padding: 12px 18px;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    
+}
+
+button {
+    background-color: #ee6c4d;
+    border-radius: 5px;
+    padding: 4px 24px;
+   border:none;
+   margin-left: 49px;
+    
+    
+    
+}
+nav .menu ul li a::after{
+    content: '';
+    width: 0;
+    
+    bottom: 1px;
+    height: 1px;
+    background-color: #ee6c4d;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    transition: .5s;
+
+}
+nav .menu ul li:hover a::after{
+width: 100%;
+opacity: 1;
+visibility: visible;
+
+
+}
+
+
+
+
+
+/* Nav end */
+/* hero start */
+
+#hero {
+    background-color: #3D5A80;
+}
+
+#hero .herotext {
+    width: 50%;
+    background-color: #3D5A80;
+    padding-top: 221px;
+    padding-left: 75px;
+    
+}
+.herotext h2{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    padding-bottom: 16px;
+}
+
+.herotext h2 span{
+    color: #ee6c4d;
+}
+.herotext p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #fff;
+    padding-bottom: 24px;
+}
+
+
+.herotext button {
+    
+    background-color: #ee6c4d;
+    border-radius: 5px;
+     padding: 12px 18px;
+    width: 187px;
+    height: 48px;
+    margin: 0;
+
+
+
+}
+.herotext button a{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+font-size: 16px;
+
+}
+
+#hero .heroimage{
+    width: 50%;
+    background-color: #3D5A80;
+    padding-top:85px;
+    padding-left:67px;
+    
+}
+
+/* hero end */
+/* about me start */
+#about{
+    background-color:#293241;
+}
+#about .aboutimg {
+    font-family: "Open Sans", sans-serif;
+    width: 40%;
+    margin-top: 92px;
+    margin-left:80px;
+    margin-bottom: 78px;
+
+}
+#about .abouttxt {
+    
+    width: 40%;
+    margin-top: 79px;
+    margin-left: 120px;
+    color: white;
+    display: inline-block;
+    margin-bottom: 64px;
+
+   
+}
+.abouttxt h2{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 200%;
+    color: #fff;
+    border-bottom: 3px solid #ee6c4d;
+    width: 478px;
+    
+
+}
+.abouttxt p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff;
+
+}
+
+
+
+
+/* about me end */
+/* companies start */
+#companies{
+    background-color: #364052;
+}
+#companies .companiestext{
+    
+    font-family: "Open Sans", sans-serif;
+    line-height: 200%; 
+    text-align: center;
+    padding-top: 48px;
+    margin-bottom: 48px;
+   
+}
+#companies .companiestext h2{
+    color: white;
+    font-weight: 400;
+    font-size: 28px;
+
+   
+}
+.companiesimg {
+    padding-bottom: 63px;
+    padding-bottom: 63px;
+    display: flex;
+    justify-content: center;
+    
+}
+/* companies end */
+/* work start */
+#work {
+    background-color: #293241;
+    padding: 20px;
+}
+
+#work .worktext h2 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 200%;
+    margin-top: 33px;
+    margin-bottom: 56px;
+    color: #fff;
+    text-align: left;
+}
+
+#work .workcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+#work .workcard {
+    width: 32%;
+     margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+
+
+#work .workcard h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+#work .btn {
+    border: 1px solid #ee6c4d;
+    border-radius: 5px;
+    padding: 12px 18px;
+    width: 187px;
+    height: 48px;
+    color: #fff;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    align-items: center;
+   display: grid
+   ;
+}
+
+
+
+
+
+/* work end */
+/* client start */
+#client{
+    background-color: #2F3746;
+}
+
+#client .clienttext h2{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 200%;
+    padding-top: 33px;
+    margin-bottom: 56px;
+    color: #fff;
+    text-align: center;
+
+}
+#client .clientcard{
+    width: 50%;
+    padding:60px;
+    color: white;
+}
+
+
+
+#client .clientcard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+#client .clientcard1{
+    margin-left: 550px;
+    width: 80%;
+    margin-bottom:100px;
+    align-items: center;
+   
+}
+
+
+
+
+/* client end */
+/* contact start */
+#contact {
+    background-color: #3D5A80;
+}
+
+#contact .contacttext h2 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 200%;
+    padding-top: 33px;
+    margin-bottom: 56px;
+    color: #fff;
+    text-align: left;
+}
+
+#contact .form {
+    width: 1205px;
+    align-items: start;
+}
+
+#contact .form .forminput {
+    color: white;
+    width: 600px;
+    display: inline-block;
+    
+}
+
+#contact .form .forminput input {
+    background-color: #293241;
+    color: white;
+    border-radius: 3px;
+    width: 600px;
+    height: 48px;
+    font-size: 16px;
+
+    
+}
+
+
+#contact .form .forminput:nth-child(3) input {
+    margin-top: 17px;
+    width: 1205px;
+    height: 180px;
+    border-radius: 3px;
+}
+#contact .btn {
+    border: 1px solid #ee6c4d;
+    border-radius: 5px;
+    padding: 12px 18px;
+    width: 187px;
+    height: 48px;
+    color: #fff;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    align-items: left;
+    margin-bottom: 48px;
+   
+}
+
+
+
+/* contact end */
+/* last part start */
+#lastpart {
+    background-color: #2F3746;
+}
+
+#lastpart .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lastpart .lastlogo,
+#lastpart .lasttxt,
+#lastpart .lastimg {
+    flex: 1;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#lastpart .lastlogo {
+    text-align: left;
+}
+
+#lastpart .lasttxt {
+    text-align: center;
+    color: #fff;
+}
+
+#lastpart .lastimg {
+    text-align: right;
+}
+
+/* last part end */
